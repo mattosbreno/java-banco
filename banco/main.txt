@@ -1,0 +1,16 @@
+        Cliente cl = new Cliente("Breno Mariano", 'M');
+        ContaPoupanca cp = new ContaPoupanca("Poupança", cl, 1000.0);
+        cp.rendimento(10.0);
+        cp.rendimento(10.0);
+        cp.sacar(410.0);
+        System.out.println(cp.toString());
+
+        Cliente c2 = new Cliente("Isis Suarez", 'F');
+        ContaPoupanca cs = new ContaPoupanca("Salario", c2, 1000.0);
+        cs.sacar(500.0);
+        System.out.println(cs.toString());
+
+        System.out.println("-------------------------------------------------------------------\n");
+        System.out.println("Quantidade de contas abertas: " + Conta.quantidadeContas);
+        System.out.println("Balanço geral: R$ " + Conta.balanco);
+        System.out.println("-------------------------------------------------------------------\n");
